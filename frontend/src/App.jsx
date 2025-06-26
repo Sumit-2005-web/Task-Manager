@@ -14,7 +14,7 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login setUser={setUser} />} />
-      <Route path="/signup" element={<Signup />} />
+      <Route path="/register" element={<Signup />} />
 
       {/* ✅ Protect all routes behind PrivateRoute */}
       <Route
