@@ -1,13 +1,30 @@
-## Task Manager Application with Mern Stack (Backend Setup)
+## 📝 Task Manager App (MERN Stack)
 
-1.Clone this repository using command  -- git clone <- repo link ->
-2.Then setup the backend using npm init -y
-3. Install dependencies using command npm install 
-4. Run as node app.js 
+A full-stack task manager app built using **MongoDB, Express, React, and Node.js** (MERN). It includes:
 
-## Frontend Part
-1.run command cd frontend
-2.then npm install
-3. npm run dev
+- ✅ User authentication (login/signup with JWT)
+- ✅ Task creation, editing, deletion
+- ✅ Protected routes for authenticated users
+- ✅ Deployed to Render (frontend + backend)
 
-Use useNavigate() and useParams() hooks and common uses hooks such as useState() and useEffect(); 
+---
+
+## 🗂 Project Structure
+
+👨‍💻 Tech Stack
+Frontend: React, React Router, Axios, MUI, Vite
+
+Backend: Node.js, Express, MongoDB, Mongoose, JWT
+
+Hosting: Render
+
+📌 Features
+User Signup/Login (JWT Auth)
+
+Create/Edit/Delete tasks
+
+Secure task routes with token
+
+Clean UI using Material-UI
+
+Fully deployed and responsive
