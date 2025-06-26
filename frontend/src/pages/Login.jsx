@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import { api } from "../api";
 import { Container, TextField, Button, Typography, Box, Link, Paper } from "@mui/material";
+import {Link} from 'react-router-dom';
 
 export default function Login({ setUser }) {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -53,7 +54,7 @@ export default function Login({ setUser }) {
           <Button variant="contained" type="submit" fullWidth sx={{ mt: 2 }}>Login</Button>
         </Box>
         <Typography variant="body2" sx={{ mt: 2 }}>
-          Don't have an account? <Link href="/register">Sign up here</Link>
+          Don't have an account? <Link to="/register">Sign up here</Link>
         </Typography>
       </Paper>
     </Container>
