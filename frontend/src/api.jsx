@@ -1,10 +1,15 @@
+// api.js
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://task-manager-backend-ti6q.onrender.com", // your API base
+  baseURL: "https://task-manager-backend-ti6q.onrender.com",
 });
 
-const token = localStorage.getItem("token");
-if (token) {
-  api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-}
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
