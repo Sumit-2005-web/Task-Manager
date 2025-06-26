@@ -53,7 +53,7 @@ export default function Login({ setUser }) {
           <Button variant="contained" type="submit" fullWidth sx={{ mt: 2 }}>Login</Button>
         </Box>
         <Typography variant="body2" sx={{ mt: 2 }}>
-          Don't have an account? <Link href="/signup">Sign up here</Link>
+          Don't have an account? <Link href="/register">Sign up here</Link>
         </Typography>
       </Paper>
     </Container>
