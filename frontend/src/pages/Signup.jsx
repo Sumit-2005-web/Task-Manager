@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../api";
-import { Container, TextField, Button, Typography, Box, Paper } from "@mui/material";
+import { Container, TextField, Button, Typography, Box, Paper} from "@mui/material";
 
 export default function Signup() {
   const [form, setForm] = useState({ username: "", password: "" });
